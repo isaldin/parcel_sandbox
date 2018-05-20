@@ -2,7 +2,7 @@
 
 `yarn start`
 
-#### Production
+#### Production (make sure that `docker` installed)
 
 `yarn prod`
 
