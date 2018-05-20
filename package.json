@@ -13,6 +13,8 @@
   },
   "scripts": {
     "build": "rm -rf dist && parcel build index.html",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "prod":
+      "yarn build && docker run -d --rm -v $PWD/dist:/usr/share/nginx/html -p8080:80 nginx"
   }
 }
